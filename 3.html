@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="cache-control" content="no-cache" />
+
+        <title>Image Sizes Example</title>
+        <meta name="description" content="941.08 KB Image">
+        <meta name="author" content="Landon Otis">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <h1>941.08 KB Image</h1>
+                <div class="img-container">
+                    <img id="img" src="#" />
+                </div>
+            </div>
+        </section>
+        <script>
+            var d = new Date();
+            var img = 'img/lion-3372720_1920.jpg?dummy=' + d.getMinutes() + d.getSeconds() + d.getMilliseconds();
+            document.getElementById("img").setAttribute("src", img);
+        </script>
+    </body>
+</html>
